@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 // test your case this is my case "hello world"
 public enum Type {
+=======
+// test
+enum Type {
+>>>>>>> 5c6972696fb3a11f9625a1e0aaf43d80a4d5fc5a
 	INSTALLATION_SOFTWARE,
 	INSTALLATION_KILENT_OS,
 	SYSTEMTEST,
@@ -9,14 +14,22 @@ public enum Type {
 	ACTIVE_DIRECTORY;
 }
 
+<<<<<<< HEAD
 public enum Priority {
+=======
+enum Priority {
+>>>>>>> 5c6972696fb3a11f9625a1e0aaf43d80a4d5fc5a
 	A,
 	B,
 	C,
 	D;
 }
 
+<<<<<<< HEAD
 public enum Status {
+=======
+enum Status {
+>>>>>>> 5c6972696fb3a11f9625a1e0aaf43d80a4d5fc5a
 	NEW,
 	ASSIGNED,
 	ONGOING,
