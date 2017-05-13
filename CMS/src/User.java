@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-public enum Competence {
-=======
+
 enum Competence {
->>>>>>> 5c6972696fb3a11f9625a1e0aaf43d80a4d5fc5a
 	NETWORK("Nätverk"),
 	STORAGE("Lagring"),
 	DATABASE,
