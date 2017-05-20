@@ -13,9 +13,9 @@ public class Cms {
 	
 	public int createNewCase(){
 		Task task = new Task();
-		Type type = null;
-		Priority priority = null;
-		task.addTask(type.ACTIVE_DIRECTORY, priority.A);
+		//Type type = null;
+		//Priority priority = null;
+		//task.addTask(Type.ACTIVE_DIRECTORY, priority.A);
 		//task.info();
 		return 0;
 	}
@@ -55,9 +55,9 @@ public class Cms {
 		
 	}
 	
-	public void showAllCases(Priority p, Status s){
+	/*public void showAllCases(Priority p, Status s){
 		
-	}
+	}*/
 	
 
 }

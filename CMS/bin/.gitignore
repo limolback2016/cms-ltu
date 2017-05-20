@@ -1,6 +1,7 @@
-/DbConnection.class
-/DbHandler.class
-/Task.class
-/TaskHandler.class
-/User.class
-/Cms.class
+/Competence.class
+/Priority.class
+/Status.class
+/Type.class
+/Task$Type.class
+/Task$Priority.class
+/Task$Status.class

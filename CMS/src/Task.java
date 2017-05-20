@@ -1,30 +1,5 @@
 
 // test my repo
-enum Type {
-	INSTALLATION_SOFTWARE,
-	INSTALLATION_KILENT_OS,
-	SYSTEMTEST,
-	SUPPORT_SOFTWARE,
-	SUPPORT_NETWORK,
-	TROUBLESHOOTING,
-	ACTIVE_DIRECTORY;
-}
-
-enum Priority {
-	A,
-	B,
-	C,
-	D;
-}
-
-enum Status {
-	NEW,
-	ASSIGNED,
-	ONGOING,
-	BLOCKED,
-	CLOSED;
-}
-
 public class Task {
 	private String department;
 	private String startDate;
@@ -113,6 +88,61 @@ public class Task {
 	public void addTask(Type type, Priority priority){
 		this.type = type;
 		this.priority = priority;
+	}
+	
+	public enum Type {
+		INSTALLATION_SOFTWARE("installation of software"),
+		INSTALLATION_KILENT_OS("installation of Operativ system for klient"),
+		SYSTEMTEST("system test"),
+		SUPPORT_SOFTWARE("software support"),
+		SUPPORT_NETWORK("network support"),
+		TROUBLESHOOTING("troubleshooting"),
+		ACTIVE_DIRECTORY("active directory");
+		
+		final String s;
+		
+		Type(String str) {
+			this.s = str;
+		}
+		
+		public String getString() {
+			return this.s;
+		}
+	}
+	
+	public enum Priority {
+		A("a"),
+		B("b"),
+		C("c"),
+		D("d");
+		
+		final String s;
+		
+		Priority(String str){
+			this.s = str;
+		}
+		
+		public String getString(){
+			return this.s;
+		}
+	}
+
+	public enum Status {
+		NEW("new"),
+		ASSIGNED("assigned"),
+		ONGOING("ongoing"),
+		BLOCKED("blocked"),
+		CLOSED("closed");
+		
+		final String s;
+		
+		Status(String str){
+			this.s = str;
+		}
+		
+		public String getString(){
+			return this.s;
+		}
 	}
 }
 

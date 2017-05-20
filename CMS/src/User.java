@@ -5,7 +5,7 @@ enum Competence {
 	DATABASE(""),
 	INCIDENT_HANDLER(""),
 	USER(""),
-	INSTALLATION("");
+	INSTALLATION("Installation");
 	
 	final String s;
 	
