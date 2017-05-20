@@ -1,5 +1,4 @@
 
-
 // test my repo
 enum Type {
 	INSTALLATION_SOFTWARE,
