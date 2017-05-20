@@ -30,6 +30,10 @@ public class DbConnection {
 		init();
 	}
 	
+	public DbConnection() throws Exception {
+		init();
+	}
+	
 	private void init() throws Exception {
 		try {
 			this.file = new FileInputStream(DbConnection.class.getResource("/Files/db.properties").getPath());
