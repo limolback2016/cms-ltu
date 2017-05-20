@@ -16,7 +16,7 @@ public class Cms {
 		Type type = null;
 		Priority priority = null;
 		task.addTask(type.ACTIVE_DIRECTORY, priority.A);
-		task.info();
+		//task.info();
 		return 0;
 	}
 	

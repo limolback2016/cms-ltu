@@ -2,10 +2,20 @@
 enum Competence {
 	NETWORK("Nätverk"),
 	STORAGE("Lagring"),
-	DATABASE,
-	INCIDENT_HANDLER,
-	USER,
-	INSTALLATION;
+	DATABASE(""),
+	INCIDENT_HANDLER(""),
+	USER(""),
+	INSTALLATION("");
+	
+	final String s;
+	
+	Competence(String str) {
+		this.s = str;
+	}
+	
+	public String getString() {
+		return this.s;
+	}
 }
 
 public class User {
