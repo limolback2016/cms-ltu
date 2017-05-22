@@ -1,19 +1,19 @@
 package cms;
 
 enum Competence {
-	NETWORK("Nätverk"),
-	STORAGE("Lagring"),
-	DATABASE(""),
-	INCIDENT_HANDLER(""),
-	USER(""),
+	NETWORK("Nätverk"), 
+	STORAGE("Lagring"), 
+	DATABASE(""), 
+	INCIDENT_HANDLER(""), 
+	USER(""), 
 	INSTALLATION("");
-	
+
 	final String s;
-	
+
 	Competence(String str) {
 		this.s = str;
 	}
-	
+
 	public String getString() {
 		return this.s;
 	}
@@ -27,15 +27,24 @@ public class User {
 	private String position;
 	private User userId;
 	private User personalNo;
-	
-	public void setName(String name){
+	private Competence competence;
+
+	public void setCompetence(Competence competence) {
+		this.competence = competence;
+	}
+
+	public Competence getCompetence() {
+		return this.competence;
+	}
+
+	public void setName(String name) {
 		this.name = name;
 	}
-	
-	public String getName(){
+
+	public String getName() {
 		return name;
 	}
-	
+
 	public String getSurname() {
 		return surname;
 	}
@@ -67,15 +76,13 @@ public class User {
 	public void setPosition(String position) {
 		this.position = position;
 	}
-	
-	public User getUserId(){
+
+	public User getUserId() {
 		return userId;
 	}
 
 	public User getPersonalNo() {
 		return personalNo;
 	}
-	
 
 }
-

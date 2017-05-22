@@ -6,20 +6,21 @@ import java.util.logging.SimpleFormatter;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.Test;
 
 public class TestBase {
 	protected static Logger logger = Logger.getLogger("MyTestingLog");
 	protected static FileHandler fh;
-	
+
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 		try {
 			fh = new FileHandler("my_test_log.log");
 			logger.addHandler(fh);
-			SimpleFormatter formatter = new SimpleFormatter(); 
+			SimpleFormatter formatter = new SimpleFormatter();
 			fh.setFormatter(formatter);
 		} catch (Exception e) {
-			
+
 		}
 	}
 

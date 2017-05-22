@@ -1,0 +1,10 @@
+May 21, 2017 10:59:55 PM cms.DbConnection init
+INFO: Server address: 10.11.12.51
+May 21, 2017 10:59:55 PM cms.DbConnection init
+INFO: Username: cms
+May 21, 2017 10:59:55 PM cms.DbConnection init
+INFO: Password: CmsDb2017.
+May 21, 2017 10:59:55 PM cms.DbConnection connect
+INFO: Connection string: jdbc:mysql://10.11.12.51:3306/cms, cms, CmsDb2017.
+May 21, 2017 10:59:56 PM cms.DbConnection connect
+INFO: com.mysql.jdbc.JDBC4Connection@11028347

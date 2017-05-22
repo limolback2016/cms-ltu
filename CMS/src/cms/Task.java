@@ -1,28 +1,29 @@
 package cms;
 
-// test my repo
+// enable to have default alternative for those important 
+// category we declare enumeration
 enum Type {
-	INSTALLATION_SOFTWARE,
-	INSTALLATION_KILENT_OS,
-	SYSTEMTEST,
-	SUPPORT_SOFTWARE,
-	SUPPORT_NETWORK,
-	TROUBLESHOOTING,
+	INSTALLATION_SOFTWARE, 
+	INSTALLATION_KILENT_OS, 
+	SYSTEMTEST, 
+	SUPPORT_SOFTWARE, 
+	SUPPORT_NETWORK, 
+	TROUBLESHOOTING, 
 	ACTIVE_DIRECTORY;
 }
 
 enum Priority {
-	A,
-	B,
-	C,
+	A, 
+	B, 
+	C, 
 	D;
 }
 
 enum Status {
-	NEW,
-	ASSIGNED,
-	ONGOING,
-	BLOCKED,
+	NEW, 
+	ASSIGNED, 
+	ONGOING, 
+	BLOCKED, 
 	CLOSED;
 }
 
@@ -38,82 +39,89 @@ public class Task {
 	private Type type;
 	private Priority priority;
 	private Status status;
-	
-	public void setPriority(Priority priority){
+
+	public void setType(Type type) {
+		this.type = type;
+	}
+
+	public Type getType() {
+		return this.type;
+	}
+
+	public void setPriority(Priority priority) {
 		this.priority = priority;
 	}
-	
-	public Priority getPriority(){
+
+	public Priority getPriority() {
 		return this.priority;
 	}
-	
-	public void setStatus(Status status){
+
+	public void setStatus(Status status) {
 		this.status = status;
 	}
-	
-	public Status getStatus(){
+
+	public Status getStatus() {
 		return this.status;
 	}
-	
-	public void setDepartment(String department){
+
+	public void setDepartment(String department) {
 		this.department = department;
 	}
-	
-	public String getDepartment(){
+
+	public String getDepartment() {
 		return this.department;
 	}
-	
-	public void setStartDate(String startDate){
+
+	public void setStartDate(String startDate) {
 		this.startDate = startDate;
 	}
-	
-	public String getStartDate(){
+
+	public String getStartDate() {
 		return this.startDate;
 	}
-	
-	public void setEndDate(String endDate){
+
+	public void setEndDate(String endDate) {
 		this.endDate = endDate;
 	}
 
-	public String getEndDate(){
+	public String getEndDate() {
 		return this.endDate;
 	}
-	
-	public void setEstimatedTime(int estimatedTime){
+
+	public void setEstimatedTime(int estimatedTime) {
 		this.estimatedTime = estimatedTime;
 	}
-	
-	public int getEstimatedTime(){
+
+	public int getEstimatedTime() {
 		return this.estimatedTime;
 	}
-	
-	public void setActualTime(int actualTime){
+
+	public void setActualTime(int actualTime) {
 		this.actualTime = actualTime;
 	}
-	
-	public int getActualTime(){
+
+	public int getActualTime() {
 		return this.actualTime;
 	}
-	
-	public void setComment(String comment){
+
+	public void setComment(String comment) {
 		this.comment = comment;
 	}
-	
-	public String getComment(){
+
+	public String getComment() {
 		return this.comment;
 	}
-	
-	public Task getTaskId(){
+
+	public Task getTaskId() {
 		return this.taskId;
 	}
-	
-	public User getUserId(){
+
+	public User getUserId() {
 		return this.userId;
 	}
-	
-	public void addTask(Type type, Priority priority){
+
+	public void addTask(Type type, Priority priority) {
 		this.type = type;
 		this.priority = priority;
 	}
 }
-
